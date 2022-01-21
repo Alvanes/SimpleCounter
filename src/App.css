@@ -1,26 +1,27 @@
 .main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 200px;
-  grid-template-areas:
-    ". a a ."
-    ". a a .";
+  /*display: grid;*/
+  /*grid-template-columns: repeat(4, 1fr);*/
+  /*grid-gap: 10px;*/
+  /*grid-auto-rows: 200px;*/
+  /*grid-template-areas:*/
+  /*  ". a a ."*/
+  /*  ". a a .";*/
+    padding-top: 220px;
 }
 
-.count {
-  grid-area: a;
-  width: 20%;
-  border-radius: 5px 5px 5px 5px;
-  border-style: solid;
-  background-color: rgb(60, 180, 231);
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-}
+/*.count {*/
+/*  grid-area: a;*/
+/*  width: 20%;*/
+/*  border-radius: 5px 5px 5px 5px;*/
+/*  border-style: solid;*/
+/*  background-color: rgb(60, 180, 231);*/
+/*  text-align: center;*/
+/*  align-self: center;*/
+/*  justify-self: center;*/
+/*}*/
 
-.inputError {
-border-radius: 3px;
-border-color: red;
-}
+/*.inputError {*/
+/*border-radius: 3px;*/
+/*border-color: red;*/
+/*}*/
 

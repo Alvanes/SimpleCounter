@@ -10,7 +10,8 @@ const Counter = (props: SetterCounterType) => {
             count={props.count}
             maxCount={props.maxCount}
             minCount={props.minCount}
-            changesMod={props.changesMod}/>
+            changesMod={props.changesMod}
+            setCount={props.setCount}/>
         <CounterButtons
             error={props.error}
             count={props.count}
