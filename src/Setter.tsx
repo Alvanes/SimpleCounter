@@ -34,31 +34,19 @@ const Setter = (props: SetterCounterType) => {
     }
     let errorMessage = props.error ? <div style={{color: "red",textAlign:"center"}}>Input isn't correct</div> : ""
     return <div style={{padding:"5px"}}>
-        <Typography
-            variant={"h6"}
-            align={"left"}
-            style={{fontWeight: "bold"}}
-        >
         <div><TextField
             label={"MAX"}
             error={props.error}
             value={props.maxCount}
             type={"number"}
             onChange={setMaxValue}/></div>
-        </Typography>
         {errorMessage}
-        <Typography
-            variant={"h6"}
-            align={"left"}
-            style={{fontWeight: "bold"}}
-        >
         <div><TextField
             label={"MIN"}
             error={props.error}
             value={props.minCount}
             type={"number"}
             onChange={setMinValue}/></div>
-        </Typography>
         {errorMessage}
         <ButtonGroup
             variant={"contained"}
@@ -72,7 +60,6 @@ const Setter = (props: SetterCounterType) => {
             onClick={setMaxMinValue}
             variant="contained"
             color="primary"
-            // size="small"
         >set</Button></ButtonGroup>
     </div>
 }

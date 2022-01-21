@@ -19,7 +19,7 @@ export type SetterCounterType = {
 
 function App() {
     let [minCount, setMinCount] = useState<number>(JSON.parse(localStorage.getItem('minValue') || "0"))
-    let [maxCount, setMaxCount] = useState<number>(JSON.parse(localStorage.getItem('maxValue') || "5"))
+    let [maxCount, setMaxCount] = useState<number>(JSON.parse(localStorage.getItem('maxValue') || "0"))
     let [count, setCount] = useState<number>(JSON.parse(localStorage.getItem('counterValue') || "0"))
     let [error, setError] = useState<boolean>(false)
     let [changesMod, setChangesMod] = useState<boolean>(false)
@@ -64,5 +64,4 @@ function App() {
         </div>
     )
 }
-
 export default App;
