@@ -4,7 +4,7 @@ import {CounterButtons} from "./components/CounterButtons";
 import {SetterCounterType} from "./App";
 
 const Counter = (props: SetterCounterType) => {
-    return <div className={"count"}>
+    return <div style={{padding:"5px"}}>
         <Count
             error={props.error}
             count={props.count}

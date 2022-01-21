@@ -26,7 +26,7 @@ export const CounterButtons = (props: CounterButtonsPropsType) => {
             variant="contained"
             disableElevation
             size="large"
-            style={{paddingBottom:"5px", paddingTop:"5px"}}
+            style={{paddingTop:"5px"}}
         >
         <Button
             disabled={props.count === props.maxCount || props.error || props.changesMod}

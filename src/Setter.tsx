@@ -33,7 +33,7 @@ const Setter = (props: SetterCounterType) => {
         props.setChangesMod(false)
     }
     let errorMessage = props.error ? <div style={{color: "red",textAlign:"center"}}>Input isn't correct</div> : ""
-    return <div>
+    return <div style={{padding:"5px"}}>
         <Typography
             variant={"h6"}
             align={"left"}
@@ -65,7 +65,7 @@ const Setter = (props: SetterCounterType) => {
             disableElevation
             size={"small"}
             fullWidth
-            style={{paddingBottom:"5px", paddingTop:"5px"}}
+            style={{paddingTop:"5px"}}
         >
         <Button
             disabled={props.error}
