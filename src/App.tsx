@@ -3,6 +3,7 @@ import './App.css';
 import Counter from "./Counter";
 import Setter from "./Setter";
 import {Container, Grid, Paper} from "@material-ui/core";
+import CurrentDate from "./components/CurrentDate";
 
 export type SetterCounterType = {
     count: number,
@@ -33,35 +34,40 @@ function App() {
                       alignItems="center">
                     <Grid item>
                         <Paper elevation={3}>
-                        <Setter
-                            count={count}
-                            setCount={setCount}
-                            minCount={minCount}
-                            maxCount={maxCount}
-                            setMinCount={setMinCount}
-                            setMaxCount={setMaxCount}
-                            error={error}
-                            setError={setError}
-                            changesMod={changesMod}
-                            setChangesMod={setChangesMod}
-                        /> </Paper> </Grid>
+                            <Setter
+                                count={count}
+                                setCount={setCount}
+                                minCount={minCount}
+                                maxCount={maxCount}
+                                setMinCount={setMinCount}
+                                setMaxCount={setMaxCount}
+                                error={error}
+                                setError={setError}
+                                changesMod={changesMod}
+                                setChangesMod={setChangesMod}
+                            /> </Paper> </Grid>
                     <Grid item>
                         <Paper elevation={3}>
-                        <Counter
-                        count={count}
-                        setCount={setCount}
-                        minCount={minCount}
-                        maxCount={maxCount}
-                        setMinCount={setMinCount}
-                        setMaxCount={setMaxCount}
-                        error={error}
-                        setError={setError}
-                        changesMod={changesMod}
-                        setChangesMod={setChangesMod}
-                    /></Paper></Grid>
+                            <Counter
+                                count={count}
+                                setCount={setCount}
+                                minCount={minCount}
+                                maxCount={maxCount}
+                                setMinCount={setMinCount}
+                                setMaxCount={setMaxCount}
+                                error={error}
+                                setError={setError}
+                                changesMod={changesMod}
+                                setChangesMod={setChangesMod}
+                            /></Paper></Grid>
+
                 </Grid>
+
             </Container>
+            <div className={"time"}><CurrentDate/></div>
+
         </div>
     )
 }
+
 export default App;

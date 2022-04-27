@@ -1,8 +1,7 @@
-import React, {ChangeEvent, useEffect, useState} from 'react';
-import {SuperButton} from "./components/SuperButton";
+import React, {ChangeEvent, useEffect} from 'react';
 import {SetterCounterType} from "./App";
 import "./App.css"
-import {Button, ButtonGroup, TextField, Typography} from "@material-ui/core";
+import {Button, ButtonGroup, TextField} from "@material-ui/core";
 
 const Setter = (props: SetterCounterType) => {
     useEffect(() => {

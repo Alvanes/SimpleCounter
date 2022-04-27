@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import s from './Count.module.css';
 import {Typography} from "@material-ui/core";
 
@@ -15,10 +15,6 @@ export const Count = (props: CountPropsType) => {
     useEffect(() => {
         localStorage.setItem("counterValue", JSON.stringify(props.count))
     }, [props.count])
-    // useEffect(()=>{
-    //     let localCount = localStorage.getItem("counterValue")
-    //     if (localCount) props.setCount(JSON.parse(localCount))
-    // },[])
     return <div className={`${props.count === props.maxCount ? s.red : s.text} ${s.text}`}>
         <Typography
             variant={"h5"}
