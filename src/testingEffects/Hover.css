@@ -1,0 +1,31 @@
+.hoverContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #000000;
+    position: relative;
+}
+
+h2::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #16A56B;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.3s ease-in-out;
+}
+
+h2:hover {
+    cursor: pointer;
+}
+
+h2:hover:after {
+    cursor: pointer;
+    width: 100%;
+    left: 0;
+}

@@ -1,5 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
+import './testingEffects/Hover.css'
+import './testingEffects/Loader.css'
+import './testingEffects/toogleCheckbox.css'
 import Counter from "./Counter";
 import Setter from "./Setter";
 import {Container, Grid, Paper} from "@material-ui/core";
@@ -26,6 +29,7 @@ function App() {
     let [changesMod, setChangesMod] = useState<boolean>(false)
     return (
         <div className={"main"}>
+
             <Container fixed>
                 <Grid container
                       spacing={4}
@@ -62,9 +66,18 @@ function App() {
                             /></Paper></Grid>
 
                 </Grid>
-
             </Container>
-            <div className={"time"}><CurrentDate/></div>
+
+            <div className={"time"}>
+                <input type={"checkbox"}/>
+                <div className={"loader"}>
+                    <h1>Loading...</h1>
+                </div>
+                <div className={"hoverContainer"}>
+                    <h2>Hover this</h2>
+                </div>
+                <CurrentDate/>
+            </div>
 
         </div>
     )

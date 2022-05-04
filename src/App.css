@@ -1,8 +1,9 @@
 .main {
-    padding-top: 220px;
+    padding-top: 150px;
 }
 .time {
-    padding-top: 500px;
+    font-size: 0.8rem;
+    padding-top: 450px;
     text-align: center;
     font-weight: bold;
 }
